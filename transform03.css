@@ -1,0 +1,41 @@
+body {
+    background-image: url(axes.png);
+    background-repeat: no-repeat;
+    background-position: 67px 67px;
+    margin: 0; padding: 0;
+}
+
+main {
+    width: 600px;
+    height:600px;
+    /* Rendu 3D : l'élément parent de l'élément qu'on anime doit définir le contexte 3D */
+    perspective: 500px;
+    perspective-origin: 25% 25%;
+}
+
+#element {
+    width :200px;
+    height:200px;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: absolute;
+    top : 200px;
+    left: 200px;
+    
+    /* une transition pour voir le mouvement au ralenti */
+    transition: transform 1s linear;
+}
+
+/* Déplacement */
+#element:hover {
+    transform: translateZ(300px);
+}
+
+#element p {
+    background-color: red;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    margin:0;
+}

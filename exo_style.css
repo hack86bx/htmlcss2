@@ -1,0 +1,75 @@
+/* Cette règle permet de faire un scrolling moins abrupte */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: aqua;
+	margin:0;
+}
+
+h1 {
+	background-color:aqua;
+	margin:0;
+	padding: 20px 0;
+	height:40px;
+    text-align: center;
+}
+
+nav {
+	background-color: white;
+	border: 5px solid black;
+    border-radius: 10px;
+	width: 200px;
+    padding: 10px;
+    /* Le menu est fixé dans la page, et les valeurs de top et left déterminent l'endroit où le menu apparaît */
+	position:fixed;
+	left: 50px;
+    top: 80px;
+}
+
+nav a {
+	display:block;
+	text-decoration:none;
+	font-size:200%;
+    text-align: center;
+    color: black;
+}
+
+nav a:hover {
+    color: darkgray;
+}
+
+#blocs {
+	margin-left:330px;
+    margin-right: 100px;
+}
+
+.element {
+	position:relative;
+	top: 0px;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+#remonter {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+	border: 5px solid white;
+    /* Pour fixer le lien de renvoi vers le haut */
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+#remonter:hover {
+    border: 5px solid darkgray;
+}
+
+#remonter a img {
+    width: 50px;
+}

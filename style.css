@@ -1,0 +1,68 @@
+body {
+    background-color: aqua;
+}
+
+.element {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+}
+
+/* ===== positionnement relatif ===== */
+/* définir le déplacement de l'élément par rapport à sa position par défaut */
+/*
+#e2 {
+    position: relative;
+    top:100px;
+    left:150px;
+}
+
+#e3 {
+    position: relative;
+    right: 25px;
+    bottom: 200px;
+}
+*/
+
+/* ===== positionnement absolu ===== */
+/* l'élément sort du flux, c'est-à-dire que les autres éléments autour de lui se repositionnent comme s'il n'existait pas. L'élement en absolu devient indépendant et peut être placé où on veut dans la page. */
+/* si son élément parent est positionné (ex: en relatif) l'élément absolu se positionnera par rapport à son parent */
+/*
+#e2 {
+    position:absolute;
+    top: 100px;
+    left:200px;
+}
+
+#blocs {
+    border: 3px dotted red;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+#e3 {
+    position: absolute;
+    top:0;
+    left:0;
+}
+*/
+
+/* ===== positionnement fixé ===== */
+/* c'est presque comme l'absolu, mais si on fait défiler l'écran, l'élément garde sa position */
+/*
+#e2 {
+    position: fixed;
+    top:50px;
+    left:50px;
+}
+*/
+
+/* ===== positionnement sticky (en adhérence) ==== */
+/* l'élement se comporte comme un élément relatif jusqu'au moment où il atteint un certain seuil (ici, top:0px) alors il se comporte comme un élement en positionnement fixe */
+#e1 {
+    position: sticky;
+    top:0px;
+}

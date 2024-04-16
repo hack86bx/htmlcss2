@@ -1,0 +1,21 @@
+body {
+    background-color: #EEEEEE;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    color: red;
+    font-style: italic;
+}
+
+h2 {
+    color: blue;
+}
+
+a {
+    color: black;
+}
